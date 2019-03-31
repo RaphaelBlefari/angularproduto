@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProdutosComponent } from './admin/produtos/produtos/produtos.component';
 import { AdminComponent } from './admin/admin/admin.component';
+import { LoginComponent } from './auth/login/login.component';
+import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -13,11 +17,16 @@ import { AdminComponent } from './admin/admin/admin.component';
     AppComponent,
     HeaderComponent,
     ProdutosComponent,
-    AdminComponent
+    AdminComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
